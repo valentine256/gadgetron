@@ -1025,7 +1025,8 @@ public:
         typedef unsigned long long size_t_type;
 
         size_t_type meta_attrib_length;
-        boost::asio::read(*socket, boost::asio::buffer(&meta_attrib_length, sizeof(size_t_type)));
+        
+				//:TODO boost::asio::read(*socket, boost::asio::buffer(&meta_attrib_length, sizeof(size_t_type)));
 
         std::string meta_attrib;
         if (meta_attrib_length > 0)
