@@ -71,7 +71,7 @@ namespace Gadgetron {
               else
             {
                 unsigned long long meta_len = 0;
-                Core::IO::write_string_to_stream(stream, meta_len);
+                Core::IO::write(stream, meta_len);
 
             }
         }
