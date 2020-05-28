@@ -69,11 +69,11 @@ namespace Gadgetron {
                 Core::IO::write_string_to_stream(stream, attribContent);
             }
             //! edit
-            else {
-                unsigned long long meta_len = 0;
-                Core::IO::write_string_to_stream(stream, meta_len);
+            // else {
+            //     unsigned long long meta_len = 0;
+            //     Core::IO::write_string_to_stream(stream, meta_len);
 
-            }
+            // }
         }
     }
     GADGETRON_WRITER_EXPORT(DicomImageWriter)
